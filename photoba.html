@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="pic_one_colour.PNG" alt="" id="myImage" style="width:500px;height:500px"><br><br>
+        <button onclick="getText('1')"> VIRAT </button>
+        <button onclick="getText('2')"> ROHIT </button>
+        <button onclick="getText('3')"> DHONI </button>
+    </div>
+    <script>
+    function getText(type)
+    {
+        if(type==1){
+            document.getElementById('myImage').src="virat_kholi.webp";
+        }
+        else if(type==2){
+            document.getElementById('myImage').src="rohit_sharma.jpg";
+            }
+        else if(type==3){
+            document.getElementById('myImage').src="ms_dhoni.jpeg";
+        }  
+    }
+</script>
+</body>
+</html>
